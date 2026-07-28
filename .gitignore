@@ -1,0 +1,12 @@
+__pycache__/
+.sbx/
+
+# Lab artifacts produced by scripts/fs_probe.py and scripts/spawn.py
+probe-inside.txt
+probe-tmp.txt
+
+# NOTE: .claude/settings.local.json is deliberately COMMITTED in this repo,
+# because Lab 1 needs both settings files present on a fresh clone to teach
+# precedence. In a real project you would ignore it -- uncomment below after
+# the Lab 1 precedence demo if you want /sandbox writes to stay untracked.
+# .claude/settings.local.json

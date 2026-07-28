@@ -1,0 +1,10 @@
+# Lab 3 (sbx), slide 12: this runs on YOUR next push, with YOUR repo secrets.
+# It never appears in a `git diff` you are likely to read carefully.
+name: ci
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make test
