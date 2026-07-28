@@ -6,7 +6,11 @@ probe-inside.txt
 probe-tmp.txt
 
 # NOTE: .claude/settings.local.json is deliberately COMMITTED in this repo,
-# because Lab 1 needs both settings files present on a fresh clone to teach
-# precedence. In a real project you would ignore it -- uncomment below after
-# the Lab 1 precedence demo if you want /sandbox writes to stay untracked.
-# .claude/settings.local.json
+# because Lab 1 needs BOTH settings files present on a fresh clone to teach
+# precedence (LAB1 sections 2.1-2.3). Many developers ignore this file globally
+# in ~/.config/git/ignore, so the negation below is required to override that.
+# In a real project you would NOT do this.
+!.claude/settings.local.json
+
+# After the Lab 1 precedence demo, delete the negation above if you would
+# rather /sandbox writes and "don't ask again" rules stayed untracked.
