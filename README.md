@@ -13,6 +13,7 @@ A single repo for three hands-on labs on where the boundary sits when you hand a
 | **1 — Permissions** | String matching on tool calls | Claude Code, before a command runs | [`docs/LAB1-PERMISSIONS.md`](docs/LAB1-PERMISSIONS.md) |
 | **2 — `/sandbox`** | Kernel, around **Bash only** | Seatbelt / bubblewrap, while it runs | [`docs/LAB2-CLAUDE-SANDBOX.md`](docs/LAB2-CLAUDE-SANDBOX.md) |
 | **3 — `sbx`** | Hypervisor, around **the whole agent** | A microVM | [`docs/LAB3-SBX.md`](docs/LAB3-SBX.md) |
+| **4 — Hooks** | Your own script, before the tool runs | A script you wrote | [`docs/LAB4-HOOKS.md`](docs/LAB4-HOOKS.md) |
 
 They are designed to run in order. Each one breaks the previous one's boundary and asks what would have held.
 
@@ -79,6 +80,9 @@ Reset between sessions with `./reset.sh`.
 │   │   └── net_probe.py            DNS, raw TCP, ICMP, route back to host
 │   ├── secrets/                    denied                  → Read(./secrets/**)
 │   ├── sandbox-configs/            staged drop-in settings.local.json files for Lab 2
+│   ├── .claude/hooks/            Lab 4: four hook scripts
+│   ├── hooks-configs/            staged drop-in settings.local.json files for Lab 4
+│   ├── tests/                    Lab 4: what the Stop hook runs
 │   ├── docs/                       the three lab guides
 │   ├── .env                        denied                  → Read(./.env)
 │   ├── Dockerfile                  Lab 3: the sandbox's own Docker daemon

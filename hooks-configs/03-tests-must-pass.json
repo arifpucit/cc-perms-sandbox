@@ -1,0 +1,27 @@
+{
+  "model": "claude-opus-5",
+  "effortLevel": "high",
+  "permissions": {
+    "allow": [
+      "Bash(git log *)",
+      "Bash(git -C ../cc-shared status)"
+    ],
+    "deny": [
+      "Bash(git push *)"
+    ],
+    "defaultMode": "default"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/tests-must-pass.sh",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}
