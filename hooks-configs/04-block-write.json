@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/block-write.py"
+            "command": "bash ${CLAUDE_PROJECT_DIR}/hooks/block-writes.py"
           }
         ]
       }
