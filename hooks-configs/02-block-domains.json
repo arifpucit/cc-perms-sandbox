@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/block-domains.sh"
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/block-domains.py"
           }
         ]
       }
