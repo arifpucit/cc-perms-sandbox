@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ${CLAUDE_PROJECT_DIR}/.claude/hooks/hello-hooks.py"
+            "command": "python3 ${CLAUDE_PROJECT_DIR}/hooks/hello-hooks.py"
           }
         ]
       }
