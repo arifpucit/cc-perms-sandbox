@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/tests-must-pass.sh",
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/tests-must-pass.py",
             "timeout": 120
           }
         ]
