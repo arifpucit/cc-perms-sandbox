@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash ${CLAUDE_PROJECT_DIR}/hooks/check-tests.py",
+            "command": "python ${CLAUDE_PROJECT_DIR}/hooks/check-tests.py",
             "timeout": 120
           }
         ]
